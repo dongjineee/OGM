@@ -12,8 +12,16 @@
 5. Place the generated `pcd_file` and `bt_file` in the `map_file` directory.
 
 # environment using Gazebo
-![image](https://github.com/dongjineee/OGM/assets/150753899/33f1c73f-0276-4cf1-bafc-91680279bfb2)
+
+<p align = "center">
+<img src="https://github.com/dongjineee/OGM/assets/150753899/33f1c73f-0276-4cf1-bafc-91680279bfb2" width="700" height="400"/>
+</p>
+
 
 # Pcd_View
 
     $ rosrun pcd_view pcd_view
+
+<p align = "center">
+<img src="https://github.com/dongjineee/OGM/assets/150753899/bd1ce4e1-7f2b-4bac-911f-3688c296ea00" width="700" height="400"/>
+</p>

@@ -10,3 +10,10 @@
 4. Procedure to create `bt_file`:
     - Use `smd_path_planner/smd_navigation/~~/pcd_converter.launch`.
 5. Place the generated `pcd_file` and `bt_file` in the `map_file` directory.
+
+# environment using Gazebo
+![image](https://github.com/dongjineee/OGM/assets/150753899/33f1c73f-0276-4cf1-bafc-91680279bfb2)
+
+# Pcd_View
+
+    $ rosrun pcd_view pcd_view

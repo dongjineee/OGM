@@ -25,3 +25,16 @@
 <p align = "center">
 <img src="https://github.com/dongjineee/OGM/assets/150753899/bd1ce4e1-7f2b-4bac-911f-3688c296ea00" width="700" height="400"/>
 </p>
+
+
+
+# Pcd_View
+
+    $ rosrun octo_view octo_view
+
+<p align = "center">
+<img src="https://github.com/dongjineee/OGM/assets/150753899/0eb53a2b-b7f8-41ac-acd3-7978ac87e20c" width="700" height="400"/>
+</p>
+
+
+

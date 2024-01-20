@@ -36,5 +36,12 @@
 <img src="https://github.com/dongjineee/OGM/assets/150753899/0eb53a2b-b7f8-41ac-acd3-7978ac87e20c" width="700" height="400"/>
 </p>
 
+# Octo to OGM
+
+    $ rosrun octo2oc octo2oc
+
+<p align = "center">
+<img src="https://github.com/dongjineee/OGM/assets/150753899/38e0e3fa-b0de-48d9-b6ef-b02c501c1e78" width="700" height="400"/>
+</p>
 
 

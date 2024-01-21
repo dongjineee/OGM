@@ -11,15 +11,14 @@ find_package(catkin REQUIRED COMPONENTS
     pcl_ros
     roscpp
     sensor_msgs
-    octomap_msgs
-    octomap
-    nav_msgs
 )
+
+find_package(octomap REQUIRED)
 
 catkin_package(
 #  INCLUDE_DIRS include
-#  LIBRARIES pcd_view
-#  CATKIN_DEPENDS pcl_ros roscpp sensor_msgs
+ LIBRARIES ${PROJECT_NAME}
+ CATKIN_DEPENDS pcl_ros roscpp sensor_msgs
 #  DEPENDS system_lib
 )
 
@@ -27,13 +26,14 @@ catkin_package(
 include_directories(
 # include
   ${catkin_INCLUDE_DIRS}
+ ${OCTOMAP_INCLUDE_DIR}
 )
 
 add_executable(pcd_view pcd_view/src/pcd_view.cpp)
 target_link_libraries(pcd_view ${catkin_LIBRARIES})
 
 add_executable(octo_view octo_view/src/octo_view.cpp)
-target_link_libraries(octo_view ${catkin_LIBRARIES})
+target_link_libraries(octo_view ${catkin_LIBRARIES} ${OCTOMAP_LIBRARIES})
 
 add_executable(octo2oc octo2oc/src/octo2oc.cpp)
-target_link_libraries(octo2oc ${catkin_LIBRARIES})
+target_link_libraries(octo2oc ${catkin_LIBRARIES} ${OCTOMAP_LIBRARIES})

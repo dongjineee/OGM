@@ -1,0 +1,14 @@
+<launch>
+
+  <rosparam file="$(find OGM)/config/param.yaml" command="load" />
+
+  <node pkg="OGM" type="pcd_view" name="pcd_view" output="screen"/>
+
+  <node pkg="OGM" type="octo_view" name="octo_view" output="screen"/>
+
+  <node pkg="OGM" type="octo2oc" name="octo2oc" output="screen"/>
+
+  <node name="rviz" pkg="rviz" type="rviz" args="-d $(find OGM)/config/octo.rviz"/>
+
+</launch>
+

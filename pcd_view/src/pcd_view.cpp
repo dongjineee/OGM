@@ -11,7 +11,9 @@ int main(int argc, char** argv) {
   ros::NodeHandle nh;
 
   // PCD 파일 경로 설정
-  std::string pcdFilePath = "/home/dongjin/map_ws/src/map_file/pcd_file/full_map.pcd";
+  std::string pcdFilePath;
+  // gil
+  nh.param<std::string>("pcd_path", pcdFilePath, "/");
 
   // PCL에서 사용할 PointCloud 타입 정의
   typedef pcl::PointXYZ PointType;

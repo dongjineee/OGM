@@ -8,7 +8,9 @@ int main(int argc, char** argv) {
   ros::NodeHandle nh;
 
   // 경로에 맞게 변경
-  std::string octomapFilePath = "/home/dongjin/map_ws/src/map_file/bt_file/full_map.bt";
+  std::string octomapFilePath;
+  // gil
+  nh.param<std::string>("octomap_path", octomapFilePath, "/");
 
   // OctoMap 읽기
   octomap::OcTree octree(octomapFilePath);
